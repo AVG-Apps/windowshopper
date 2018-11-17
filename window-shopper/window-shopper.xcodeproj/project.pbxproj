@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9C7C3D2421A0AD5C00C1D0E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C3D2321A0AD5C00C1D0E4 /* AppDelegate.swift */; };
-		9C7C3D2621A0AD5C00C1D0E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C3D2521A0AD5C00C1D0E4 /* ViewController.swift */; };
+		9C7C3D2621A0AD5C00C1D0E4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C3D2521A0AD5C00C1D0E4 /* MainVC.swift */; };
 		9C7C3D2921A0AD5C00C1D0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C3D2721A0AD5C00C1D0E4 /* Main.storyboard */; };
 		9C7C3D2B21A0AD5E00C1D0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C3D2A21A0AD5E00C1D0E4 /* Assets.xcassets */; };
 		9C7C3D2E21A0AD5E00C1D0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C3D2C21A0AD5E00C1D0E4 /* LaunchScreen.storyboard */; };
+		9C7C3D3821A0B31800C1D0E4 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C3D3721A0B31800C1D0E4 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C7C3D2021A0AD5C00C1D0E4 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7C3D2321A0AD5C00C1D0E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C7C3D2521A0AD5C00C1D0E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C7C3D2521A0AD5C00C1D0E4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		9C7C3D2821A0AD5C00C1D0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C7C3D2A21A0AD5E00C1D0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7C3D2D21A0AD5E00C1D0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7C3D2F21A0AD5E00C1D0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7C3D3721A0B31800C1D0E4 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		9C7C3D2221A0AD5C00C1D0E4 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				9C7C3D3621A0B2E400C1D0E4 /* Views */,
+				9C7C3D3521A0AE4900C1D0E4 /* Controller */,
 				9C7C3D2321A0AD5C00C1D0E4 /* AppDelegate.swift */,
-				9C7C3D2521A0AD5C00C1D0E4 /* ViewController.swift */,
 				9C7C3D2721A0AD5C00C1D0E4 /* Main.storyboard */,
 				9C7C3D2A21A0AD5E00C1D0E4 /* Assets.xcassets */,
 				9C7C3D2C21A0AD5E00C1D0E4 /* LaunchScreen.storyboard */,
 				9C7C3D2F21A0AD5E00C1D0E4 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		9C7C3D3521A0AE4900C1D0E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C7C3D2521A0AD5C00C1D0E4 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C7C3D3621A0B2E400C1D0E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C7C3D3721A0B31800C1D0E4 /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7C3D2621A0AD5C00C1D0E4 /* ViewController.swift in Sources */,
+				9C7C3D3821A0B31800C1D0E4 /* CurrencyTxtField.swift in Sources */,
+				9C7C3D2621A0AD5C00C1D0E4 /* MainVC.swift in Sources */,
 				9C7C3D2421A0AD5C00C1D0E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
